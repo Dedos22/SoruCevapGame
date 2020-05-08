@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head><script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="myJS.js"></script>
+    <meta charset="UTF-8">
+    <title>SORULAR</title>
+    <script type="text/javascript">
+
+    
+
+    var saniye = 0, dakika = 0, saat = 0;
+  function bak()
+  {
+    
+    if(saniye < 20) saniye = saniye + 1;
+    else
+    {
+      
+    $("#m").html("SÜRENİZ DOLDU!!!");
+
+ 
+
+  var btn = $(".d");
+  btn.prop("disabled", true); 
+  $( ".d").css( 'background-color' , 'green' );
+  
+    
+    }
+    
+    $("#sure").html(saat + " : " + dakika + " : " + saniye);
+  }
+  $(document).ready(function(){
+    $("#sure").html("0 : 0 : 0");
+    setInterval(bak, 1000);
+  });
+
+
+   
+
+   
+
+    </script>
+<style>
+#sık{
+
+
+  margin-top: 50px
+}
+h4{
+  background-color: 
+}
+
+.soru{
+ float:left;
+ margin-left: 50px;
+}
+#bar{
+    background-image: url("resim/gezegen.jpg");
+  background-repeat: repeat-x;
+}
+
+
+</style>
+
+</head>
+<body>
+
+
+  <br>
+ <center>
+ <div  id="bar"><br>
+ HER SORU İÇİN 20 SANİYENİZ VARDIR!!!<br>
+ <p style="color: red">KRONOMETRE</p>
+ <p style="color: red;font-size: 20px" id="sure"></p>
+<p style="color: red" id="m"></p>
+
+</div>
+</center>  
+
+                       
+<br>
+<div class="soru">
+  Soru4-]<br><br>
+<img width="600px" src="resim/paulr.jpg">
+</div >
+<div class="soru" id="sık">
+ 
+ <h4>Resimde gördüğünüz tablo kime aittir?</h4><br><br>
+  
+
+  <button  id="do" class="d" >c-)Paul Gauguin<br><img src="resim/paul.jpg"></button>
+ <button    class="yanlıs"   >d-) Vincent Van Gogh <br><img src="resim/vincent.jpg"></button><br><br>
+<a style="margin-left: 200px;font-size: 20px" href="5.html">SONRAKİ SORU</a>
+
+</div>
+
+
+ 
+
+
+
+
+
+
+</body>
+</html>

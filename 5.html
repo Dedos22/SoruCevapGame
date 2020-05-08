@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head><script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="myJS.js"></script>
+    <meta charset="UTF-8">
+    <title>SORULAR</title>
+    <script type="text/javascript">
+
+    
+  var saniye = 0, dakika = 0, saat = 0;
+  function bak()
+  {
+    
+    if(saniye < 20) saniye = saniye + 1;
+    else
+    {
+      
+    $("#m").html("SÜRENİZ DOLDU!!!");
+
+ 
+
+  var btn = $(".d");
+  btn.prop("disabled", true); 
+  $( ".d").css( 'background-color' , 'green' );
+  
+    
+    }
+    
+    $("#sure").html(saat + " : " + dakika + " : " + saniye);
+  }
+  $(document).ready(function(){
+    $("#sure").html("0 : 0 : 0");
+    setInterval(bak, 1000);
+  });
+
+
+   
+
+
+
+   
+
+    </script>
+<style>
+#sık{
+
+
+  margin-top: 40px
+}
+h4{
+  background-color: 
+}
+
+.soru{
+ float:left;
+ margin-left: 50px;
+}
+#bar{
+    background-image: url("resim/gezegen.jpg");
+  background-repeat: repeat-x;
+}
+
+</style>
+
+</head>
+<body>
+
+
+  <br>
+ <center>
+ <div  id="bar"><br>
+ HER SORU İÇİN 20 SANİYENİZ VARDIR!!!<br>
+ <p style="color: red">KRONOMETRE</p>
+ <p style="color: red;font-size: 20px" id="sure"></p>
+<p style="color: red" id="m"></p>
+Doğru Sayınız:<p  id="skor"></p>
+</div>
+</center>  
+
+                       
+<br><br>
+<div class="soru">
+  Soru5-]<br><br>
+<img width="600px" src="resim/indir.jpg">
+</div >
+<div class="soru" id="sık">
+  <p id="sure"></p>
+<p id="m"></p>
+ <h4>Pep Guardiola,Jose Mourinho ve Jürgen Klopp hangi spor dalında <br>şampiyonluklar kazanmış isimlerdir?</h4><br><br>
+  
+  <button    class="yanlıs" >a-)Atletizm</button><br><br><br>
+ 
+
+  <button    class="yanlıs" >c-)Basketbol</button><br><br><br>
+ <button     id="do" class="d">d-)Futbol</button><br><br><br>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

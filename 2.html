@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head><script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="myJS.js"></script>
+    <meta charset="UTF-8">
+    <title>SORULAR</title>
+    <script type="text/javascript">
+
+    
+  var saniye = 0, dakika = 0, saat = 0;
+  function bak()
+  {
+    
+    if(saniye < 23) saniye = saniye + 1;
+    else
+    {
+      
+    $("#m").html("SÜRENİZ DOLDU!!!");
+
+ 
+
+  var btn = $(".d");
+  btn.prop("disabled", true); 
+  $( ".d").css( 'background-color' , 'green' );
+  
+    
+    }
+    
+    $("#sure").html(saat + " : " + dakika + " : " + saniye);
+  }
+  $(document).ready(function(){
+    $("#sure").html("0 : 0 : 0");
+    setInterval(bak, 1000);
+  });
+
+
+   
+
+    </script>
+<style>
+
+#sık{
+
+
+  margin-top: 150px
+}
+h4{
+  background-color: 
+}
+
+.soru{
+ float:left;
+ margin-left: 50px;
+}
+#bar{
+    background-image: url("resim/gezegen.jpg");
+  background-repeat: repeat-x;
+}
+
+</style>
+
+</head>
+<body>
+
+
+    
+
+                       
+<br>
+ <center>
+ <div  id="bar"><br>
+  23 SANİYENİZ VARDIR!!!<br>
+ <p style="color: red">KRONOMETRE</p>
+ <p style="color: red;font-size: 20px" id="sure"></p>
+<p style="color: red" id="m"></p>
+
+</div>
+</center>
+<div class="soru">
+  Soru2-]<br><br>
+ <video width="940"  controls="controls">
+  <source src="resim/kazan.mp4" type="video/mp4" />
+  
+</video>
+</div >
+<div class="soru" id="sık">
+  <p id="sure"></p>
+<p id="m"></p>
+ <h4>Dinlediğiniz sesin devamında hoca ne demiştir?</h4><br><br>
+ 
+  <button    class="yanlıs" >a-)Hayırlısı Bakalım</button><br><br><br>
+  <button    class="yanlıs" >b-)Ya tutarsa</button><br><br><br>
+  <button id="do" class="d" >c-)Kazan doğurdu</button><br><br><br>
+  <button    class="yanlıs" >d-)Sizin kazan mı,sizlere ömür</button><br><br><br>
+
+<a style="margin-left: 200px;font-size: 20px"  href="3.html">SONRAKİ SORU</a>
+
+</div>
+
+ 
+
+
+
+
+
+
+
+</body>
+</html>
+
